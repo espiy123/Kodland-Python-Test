@@ -1,0 +1,8 @@
+listOfNumbers = [4,0,5,0,3,0,0,5]
+for x in listOfNumbers:
+    if x == 0:
+        listOfNumbers.remove(0)
+        listOfNumbers.append(0)
+    else:
+        continue
+print(listOfNumbers)
