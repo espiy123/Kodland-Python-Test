@@ -1,0 +1,17 @@
+linesCount = int(input("How many lines will there be?"))
+text = ""
+for x in range(0, linesCount):
+    text = text+input()
+vowels = ["a","e","i","o","u"]
+countOfVowels = 0
+temp = 0
+for x in text:
+    if x.lower() in vowels:
+        countOfVowels += 1
+        temp += 1
+    elif x.isalpha():
+        temp += 1
+    else:
+        continue
+print("Number of vowels: ", countOfVowels)
+print("Number of consonants: ", temp - countOfVowels)
